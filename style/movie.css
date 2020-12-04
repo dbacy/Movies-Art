@@ -1,0 +1,47 @@
+header {
+    background: url("../images/Premier_Lights.jpg");
+    background-size: 120px 100px;
+    height: 100px;
+}
+
+body {
+    background: url("../images/Cinema.jpg") top / cover no-repeat fixed;
+    color: white;
+}
+
+figure {
+    border: 5px double darkblue;
+    background-color: crimson;
+    padding: 5px;
+    display: table;
+    opacity: 0.5;
+}
+
+figure:hover {
+    opacity: 1.0;
+}
+
+footer {
+    background: url("../images/Premier_Lights.jpg");
+    background-size: 120px 100px;
+    height: 100px;
+}
+
+footer em,
+strong {
+    background: crimson;
+}
+
+.banner{
+    width: 20%;
+    height: 10%;
+}
+
+.quote{
+    width: 35%;
+}
+
+.center-in-container{
+    margin: auto;
+    
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <h1>Add A Movie</h1>
+        <form>
+            <tbody>
+                    <tr>
+                        <td><label for="txtTitle">Title:</label></td>
+                        <td><input type="text" name="textTitle" id="txtTitle"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtReleaseDate">Release Date:</label></td>
+                        <td><input type="text" name="textReleaseDate" id="txtReleaseDate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtDirector">Director:</label></td>
+                        <td><input type="text" name="textDirector" id="txtDirector"></td>
+                    </tr>
+                    <tr>
+                    <td><label for="ddRating">Rating:</label></td>
+                    <td><select id="ddRating" class="" name="ddRating">
+                        <option value="1">G</option>
+                        <option value="2">PG</option>
+                        <option value="3">PG-13</option>
+                        <option value="4">R</option>
+                        <option value="5">NR</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="txtRuntime">Runtime: ex(2hr:5min)</label></td>
+                    <td><input type="text" name="txtRuntime" id="txtRuntime"></td>
+                </tr>
+                <tr>
+                    <td><label for="txtComments">Plot: (please give a short description )</label></td>
+                    <td><textarea name="txtComments" id="txtComments" maxlengtd="100" rows="5"
+                        cols="60">Leave a Comment</textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="fileUpload">Upload Image:</label></td>
+                    <td><input type="file" name="fileUpload"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Save</button></td>
+                </tr>
+            </tbody>
+        </form>
+    </table>
+</body>
+
+</html>

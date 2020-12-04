@@ -1,0 +1,16 @@
+#Peak{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+body{
+    background-color: slategray;
+}
+
+figure{
+    border: 15px double darkolivegreen;
+    background-color: slategray;
+    padding: 5px;
+    display: table;
+}

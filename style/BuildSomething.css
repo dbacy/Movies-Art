@@ -1,0 +1,44 @@
+#CSS3 {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+h1 {
+    background-color: tomato;
+    color: yellowgreen;
+}
+
+body {
+    background-color: tomato;
+}
+
+table {
+    background-color: blue;
+}
+
+table,
+th,
+td {
+    border: 1px dashed black;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: lightblue;
+}
+
+th,
+td {
+    padding: 5px;
+    text-align: center;
+    
+}
+
+tr:hover {
+    background-color: tomato;
+}
+
+tr:nth-child(even) {
+    background-color: teal;
+}
