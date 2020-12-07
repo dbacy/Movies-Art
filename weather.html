@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/weather.css">
+    <title>Weather Forcast</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Get the Weather Forecast:</legend>
+        <label for="allDays">Show Full Forecast:</label>
+        <input type="checkbox" id="allDays">
+        <br>
+        <label for="city">Get the Weather For:</label>
+        <input type="text" id="city" value='Fort Worth'>
+        <br>
+        <button id="getWeather">Get Weather</button>
+        <div id="weatherList" class='grid-container'></div>
+    </fieldset>
+</body>
+<script src="js/weather.js"></script>
+
+</html>
