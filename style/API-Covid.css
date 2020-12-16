@@ -1,0 +1,62 @@
+BODY {
+
+    background-color: lightblue;
+}
+
+.header {
+    color: darkslategray;
+    height: 70px;
+    top: 0px;
+    width: 100%;
+    margin: 0%;
+    position: absolute;
+    left: 0px;
+}
+
+label {
+    color: #66FCF1;
+    font-size: 140%;
+}
+
+.button {
+    text-align: center;
+    padding-top: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: darkgreen;
+}
+
+tr:nth-child(odd) {
+    background-color: darkseagreen;
+}
+
+table,
+td,
+tr,
+th {
+    border: 3px solid black;
+    border-collapse: collapse;
+    transition: .5s;
+}
+
+th,
+td {
+    padding: 5px;
+    text-align: center;
+}
+
+
+tr:hover {
+    background-color: lightblue;
+}
+
+td:hover {
+    transform: scale(1.8);
+    background-color: teal;
+    border-radius: 20px;
+}
+
+tr.selected {
+    background-color: wheat;
+}
