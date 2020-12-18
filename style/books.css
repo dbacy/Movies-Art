@@ -1,0 +1,27 @@
+body{
+   background-color: lightcoral;
+}
+table,
+td,
+tr
+ {
+    border: 3px solid black;
+    border-collapse: collapse;
+ }
+
+ td {
+    padding: 5px;
+    text-align: center;
+}
+
+.banner{
+   width: 30%;
+   height: 10%;
+   
+}
+
+
+.center-in-container{
+   margin: auto;
+   background-color: lightskyblue;
+}

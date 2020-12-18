@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search For A Book</title>
+    <link rel="stylesheet" href="style/books.css">
+</head>
+<header>
+
+</header>
+
+<body>
+    <div class="banner center-in-container">
+        <label for="bookSearch">Find A Book</label>
+        <input type="text" id='bookSearch'>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Preview Link</th>
+                <th>Page Count</th>
+                <th>Descirption</th>
+                <th>Published Date</th>
+            </tr>
+        </thead>
+        <tbody id='bookList'>
+        </tbody>
+    </table>
+</body>
+<script>
+    let search = document.getElementById('bookSearch');
+    search.addEventListener('blur', bookSearch);
+
+
+
+    function bookSearch() {
+        let tableBody = document.getElementById('bookList');
+
+        let book = this.value;
+        fetch(`https://www.googleapis.com/books/v1/volumes?q=${book}`)
+            .then(resp => resp.json()) //  wait for the response and convert it to JSON
+            .then(books => { //  with the resulting JSON data do something
+
+                books.items.forEach(b => {
+                    if (typeof b.volumeInfo.authors === 'undefined') b.volumeInfo.authors = ['not listed']
+                    if (typeof b.volumeInfo.imageLinks === 'undefined') b.volumeInfo.imageLinks = {
+                        thumbnail: 'images/No_Cover_Found.png'
+                        // need a image to put in to the code above
+                    }
+
+                });
+
+                let innerHTML = '';
+
+
+
+                for (let book of books.items) {
+
+                    innerHTML += `
+                    
+                <tr>
+                    <td><img src=${book.volumeInfo.imageLinks.thumbnail}></td>
+                    <td>${book.volumeInfo.title}</td>
+                    <td>${book.volumeInfo.authors[0]}</td>
+                    <td><a href=${book.volumeInfo.previewLink}></td>
+                    <td>${book.volumeInfo.pageCount}</td>
+                    <td>${book.volumeInfo.description}</td>
+                    <td>${book.volumeInfo.publishedDate}</td>
+                    </tr>`
+
+                }
+                tableBody.innerHTML = innerHTML;
+            });
+    }
+</script>
+
+</html>

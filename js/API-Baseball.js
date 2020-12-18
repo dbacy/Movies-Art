@@ -1,14 +1,3 @@
-// fetch("https://api-baseball.p.rapidapi.com/teams/statistics?league=1&season=2019&team=5", {
-// 	"method": "GET",
-// 	"headers": {
-// 		"x-rapidapi-key": "ef1331e10fmsh48fc63619bb0a2dp13cd54jsn3fc4e1f295de",
-// 		"x-rapidapi-host": "api-baseball.p.rapidapi.com"
-// 	}
-// })
-// .then(response => response.json())
-// .catch(err=> {
-// 	console.error(err);
-// });
 
 function getTeams() {
 	let year = document.getElementById('year').value;
@@ -38,11 +27,20 @@ function showTeams(teams) {
 			<td>
 				<img src=${team.logo} height=50px width=50px>
 			</td>
+			<a href ="API-Baseball-Stat.js"> 
 			<td><input type=checkbox id=${team.name}></td>
+			</a>
 		</tr>`
 	}
 	teamTable.innerHTML = html;
 }
 
+function check() {
+	document.getElementById("myCheck").checked = true
+}
 
-// ef1331e10fmsh48fc63619bb0a2dp13cd54jsn3fc4e1f295de
+function uncheck() {
+	document.getElementById("myCheck").checked = false
+}
+
+
