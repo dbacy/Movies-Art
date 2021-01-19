@@ -1,0 +1,18 @@
+*{
+    margin: 5px;
+}
+input:focus , select:focus{
+    box-shadow: 7px 7px 7px gray 
+}
+label:hover{
+    color: royalblue;
+}
+span{
+    color: red;
+}
+tr:hover , td:hover{
+    color: royalblue;
+}
+input:hover{
+    background-color: royalblue;
+}

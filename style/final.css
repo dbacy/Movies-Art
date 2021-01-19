@@ -1,0 +1,36 @@
+/* CSS Document */
+body {
+    background: #6595a3;
+    padding: 0 20px;
+    color: white;
+  }
+  
+  /* Create SPAN rule to make error messages bold and red */
+  span{
+      color: red;
+      font-weight: bold;
+  }
+  
+  /* Create rule for h3 tags and set the font to 26px with a font-face of tahoma.  set the color to light blue */
+  h3{
+      font-size: 26px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: lightblue;
+  }
+  /* Add 25px of padding all around the form */
+    /* set the border to a solid border 1px width and black */
+  form {
+    padding: 25px;
+    border: 1px solid black;
+  }
+  
+  a {
+    /* set the color equal to a light gray */
+    color: lightgray;
+  }
+  
+  .clear {
+    clear: both;
+    overflow: hidden;
+    height: 0;
+  }

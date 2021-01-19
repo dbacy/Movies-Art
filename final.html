@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SD 101 - Final Lab Exam</title>
+    <link rel="stylesheet" href="style/final.css">
+    
+  </head>
+  <body>
+    <h3>Voter E-Registration</h3>
+    <hr />
+
+    <!--forms begin-->
+    <form name="myForm" id="myForm" action="#">
+      <!--fieldset tag puts box around form-->
+      <fieldset>
+        <label for="Name">Name</label>
+        <input type="text" id="Name" name="Name" />
+        <span id="NameMessage"></span>
+        <p>
+          <label for="Gender">Gender</label>
+          <input id="Gender" name="Gender" type="radio" value="male" />
+          male
+          <input id="Gender" name="Gender" type="radio" value="female" />
+          female
+          <span id="GenderMessage"></span>
+        </p>
+        <p>
+          <label for="Citizen">Are you a U.S. Citizen?</label>
+          <input id="Citizen" type="checkbox" name="Citizen" /> check if yes
+          <!-- TODO add an error message span for Citizen checkbox (look at what was done for the Gender and Name fields)-->
+          <span id="CitizenMessage"></span>
+        </p>
+        <p>
+          <label for="County">County of Residence</label>
+          <select id="County" name="County">
+            <option value="Dallas">Dallas</option>
+            <option value="Collin">Collin</option>
+            <option value="Denton">Denton</option>
+            <option value="Johnson">Johnson</option>
+            <!-- TODO Add an opion for Tarrant County-->
+            <option value="Tarrant County"> Tarrant County</option>
+          </select>
+          <span id="CountyMessage"></span>
+        </p>
+        <p>
+          <label for="Age">Age</label>
+          <input type="number" id="Age" name="Age"  min="18"/>
+          <!-- TODO make Age accept only 18 and above -->
+          <span id="AgeMessage"></span>
+        </p>
+        <p>
+          <!--Add email label and email input and error message span for email -->
+          <label for="txtEmail">Email</label>
+        <input type="text" id="txtEmail" name="txtEmail" />
+        <span id="EmailMessage"></span>
+        </p>
+        <p>
+          <button id="sub">Submit</button>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+  <!-- TODO Add your script tag for your JavaScript code -->
+  <script src="js/try2.js"></script>
+</html>
